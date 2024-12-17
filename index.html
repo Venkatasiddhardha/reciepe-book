@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🍽️ My Recipe Book</h1>
+        <p>Discover, Save, and Share Your Favorite Recipes!</p>
+    </header>
+
+    <!-- Add Recipe Section -->
+    <section id="add-recipe">
+        <h2>Add a New Recipe</h2>
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <textarea id="recipe-ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+            <textarea id="recipe-steps" placeholder="Preparation Steps" required></textarea>
+            <label for="recipe-image">Upload Image:</label>
+            <input type="file" id="recipe-image" accept="image/*" required>
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search-recipe">
+        <h2>Search Recipes</h2>
+        <input type="text" id="search-box" placeholder="Search by recipe name or ingredients...">
+    </section>
+
+    <!-- Recipes Display -->
+    <section id="recipes-container">
+        <h2>Recipe Collection</h2>
+        <div id="recipe-cards"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
